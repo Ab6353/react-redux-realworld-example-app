@@ -3,7 +3,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = https://mern.ha.squareops.co.in;  //passed react application backend uri
+const API_ROOT = "https://mern.ha.squareops.co.in";  //passed react application backend uri
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
