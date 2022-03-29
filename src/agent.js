@@ -1,9 +1,11 @@
+require('dotenv').config()
+
 import superagentPromise from 'superagent-promise';
 import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = process.env.REACT_APP_URI;  //passed react application backend uri
+const API_ROOT = process.env.REACT_APP_API;  //passed react application backend uri
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
