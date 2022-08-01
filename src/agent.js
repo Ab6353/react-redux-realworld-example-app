@@ -4,7 +4,7 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT =  process.env.REACT_APP_API_ROOT;  //'http://abc/api'; 
+const API_ROOT =  process.env.REACT_APP_BACKEND_API;  //'http://abc/api'; 
 
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
